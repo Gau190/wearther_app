@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+   
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="container p-2 d-flex justify-content-center">
+      <div class="col-10 col-lg-4 col-md-6 col-sm-10 ">
+        <div class="header col-12 pb-4">
+          <form class="form-inline">
+            <div class="form-group d-flex">
+              <i
+                class="fa fa-search position-absolute m-2"
+                style="z-index: 5"
+                id="search-icon"
+                onclick="searchWeather()"
+              ></i>
+              <input
+                type="text"
+                class="form-control form-control-sm ps-5 position-relative rounded-pill"
+                id="city"
+                placeholder="Enter City"
+              />
+              <i class="fa-solid fa-circle-xmark position-absolute" style="z-index: 5"></i>
+            </div>
+          </form>
+        </div>
+        <div class="body col-12 text-center ">
+          <div class="card">
+            <div class="card-body mb-3">
+              <p class="text-uppercase text-end">00:00 <span id="hour">am</span> </p>
+              <h1 class="card-title text-capitalize" id="city-name">hà nội</h1>
+              <h1 class="card-subtitle" id="temp">26</h1>
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt="weather icon"
+              />
+              <p class="card-text" id="desc">mây rải rác</p>
+              <p class="note text-capitalize">chúc bạn có một ngày vui vẻ</p>
+            </div>
+            <div class="card-bottom border-top border-dark py-4">
+              <div class="row">
+                <div class="col-6">
+                  <div class="item-1 mb-2">
+                    <p class="card-text fw-bolder mb-0">MT Mọc</p>
+                    <p class="card-text text-uppercase" >
+                      <span id="value-sunrise">6:00</span> am
+                    </p>
+                  </div>
+                  <div class="item-2">
+                    <p class="card-text fw-bolder mb-0">Độ ẩm</p>
+                    <p class="card-text"><span id="humidity">50</span>%</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="item-1 mb-2">
+                    <p class="card-text fw-bolder mb-0">MT lặn</p>
+                    <p class="card-text text-uppercase" >
+                      <span id="value-sunrise">17:00</span> pm
+                    </p>
+                  </div>
+                  <div class="item-2">
+                    <p class="card-text fw-bolder mb-0">Tốc độ gió</p>
+                    <p class="card-text" ><span id="wind-speed">5.54</span> km/h</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
